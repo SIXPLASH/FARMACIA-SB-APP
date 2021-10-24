@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <img src="assets/zona_pagos.jpg">
+    </div>
+</div>
+<br>
+<hr>
+<!-- GRID PARA VENTA-->
+<div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <!--Etiqueta para recibir respuesta de Query Params-->
+        <h2 id="VALOR" class="fw-bold text-center"></h2>
+        <br><br>
+        <h3>Ingrese sus datos y seleccione el metodo de pago</h3>
+        <br>
+        <!-- Formulario para captura de datos-->
+        <form id="form-venta" autocomplete="off">
+            <div class="input-group mb-3">
+                <span class="input-group-text">NOMBRE COMPLETO</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" id="txt_nombre_completo">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">EMAIL</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" id="txt_email_venta">
+            </div>
+            <!--Seleccion por radios-->
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tipo-pago" id="radio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Efectivo</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tipo-pago" id="radio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Tarjeta</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tipo-pago" id="radio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">tranferencia </label>
+            </div>
+            <br>
+            <!--Botones Aceptar y Cancelar-->
+            <button type="button" class="btn btn-info" onclick="datos_venta()">ACEPTAR</button> <button
+                type="button" class="btn btn-warning" onclick="cancelar()">CANCELAR</button>
+        </form>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <img src="assets/carrito_compra.jpg" class="img-fluid">
+    </div>
+</div>
+<br><br>

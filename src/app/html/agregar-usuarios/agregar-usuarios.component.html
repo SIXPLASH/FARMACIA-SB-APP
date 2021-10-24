@@ -1,0 +1,48 @@
+<!-- Imagen CONTROL ACCESO-->
+<div class="row">
+    <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <img src="assets/banner-control-acceso.jpg" class="img-fluid" alt="Control Acceso">
+    </div>
+</div>
+<br>
+<hr>
+<!-- GRIDS PARA ACCEDER-->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <!--Formulario de Ingreso de usuarios-->
+        <h2 class="fw-bold text-center">Ingreso de Usuarios</h2>
+        <form id="miForm" autocomplete="off">
+            <label for="usuario" class="sr-only">Nombre Usuario</label> <br>
+            <input type="text" class="form-control" id="txtusuario"> <br>
+            <label for="usuario" class="sr-only">Contraseña Usuario</label> <br>
+            <input type="text" class="form-control" id="txtcontraseña"> <br>
+            <!--Bonotes de Agregar Editar-->
+            <button type="button" id="btnagregar" class="btn btn-primary" onclick="agregar()">Agregar</button>
+            <button type="button" id="btneditar" class="btn btn-warning"
+                onclick="actualizarfila()">Editar</button>
+        </form>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <!--Tabla de visualizacion de usuarios-->
+        <div id="cuadro" style="display: none" class="table-responsive">
+            <h2 class="fw-bold text-center">Usuarios registrados</h2>
+            <br>
+            <table class="table table-bordered border-info table-hover" id="mitabla">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>usuario</th>
+                        <th>contraseña</th>
+                        <th class="text-center">Opcion</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+<br><br>
